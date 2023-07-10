@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> 
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>Complaint Registered</h2>
+
+<table border="1">
+     <thead>
+       <tr>
+         <th>Complaint-Id</th>
+         <th>Employee-Name</th>
+         <th>Employee-Id</th>
+         <th>Company-Name</th>
+         <th>Issue-type</th>
+         <th>Description</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+           <td th:text="${complaint.id}"></td>
+           <td th:text="${complaint.empName}"></td>
+           <td th:text="${complaint.empId}"></td>
+           <td th:text="${complaint.compName}"></td>
+           <td th:text="${complaint.issue}"></td>
+           <td th:text="${complaint.desc}"></td>
+        </tr>
+       
+       </tbody>
+</table>       
+
+</body>
+</html>
